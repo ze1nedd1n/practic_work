@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #E2E2E2;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px;
+}
+.login h1 {
+    font-size: 33px;
+    line-height: 50px;
+    
+    color: #212B36;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 50px;
+}
+.login span {
+   
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #212B36;
+}
+.input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    color: #1C2434;
+}
+.input input{
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #3c50e0;
+    border-radius: 8px;
+    border-color: #3c50e0;
+    height: 40px;
+    width: 400px;
+}
+::placeholder {
+    padding-left: 5%;
+}
+img {
+    position: fixed;
+    color: #64748b;
+    vertical-align: middle;
+    margin: 35px 370px;
+    
+}
+button {
+    margin-top: 20px;
+    width: 400px;
+    height: 40px;
+    background: #3056d3;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    border-color: #3056d3;
+}
