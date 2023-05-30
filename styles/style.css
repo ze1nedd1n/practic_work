@@ -76,3 +76,7 @@ button {
     font-family: 'Poppins';
     border-color: #3056d3;
 }
+.colortext {
+    color: darkgrey;
+    padding-left: 5%;
+}
