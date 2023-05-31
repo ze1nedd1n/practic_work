@@ -55,12 +55,13 @@ body{
     border-color: #3c50e0;
     height: 40px;
     width: 400px;
+    position: relative;
 }
 ::placeholder {
     padding-left: 5%;
 }
 img {
-    position: fixed;
+    position: absolute;
     color: #64748b;
     vertical-align: middle;
     margin: 35px 370px;
@@ -79,4 +80,10 @@ button {
 .colortext {
     color: darkgrey;
     padding-left: 5%;
+}
+.validator-error {
+    border-color: red! important;
+    border: 1 px solid red;
+    padding-left: 5%;
+
 }

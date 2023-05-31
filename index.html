@@ -9,24 +9,25 @@
 
     </head>
     <body>
-        <div class="login">
+        <form class="login">
             <h1>Login</h1>
             <span>Hello! Log in with your email</span>
             <div class="input">
                 <span>Email</span>
-                    <input class="colortext" type="text" placeholder="Enter your email" />
+                    <input class="validator-error"  class="colortext" type="text" placeholder="Enter your email" name="email" />
                     <img class="Vector"  src="images/Vector.svg"  />
                 
             </div>
             <div class="input">
                 <span>Password</span>
-                <input class="colortext" type="password" placeholder="Enter your password" />
+                <input class="colortext" type="password" placeholder="Enter your password" name="password" />
                 <img src="images/Vector2.svg"  />
             </div>
             <div>
-                <button type="button">LOG IN</button>
+                <button onclick="validate()"  type="submit">LOG IN</button>
             </div>
-        </div>
+        </form>
+        <script src="scripts/app.js"></script>
 
     </body>
 </html>
