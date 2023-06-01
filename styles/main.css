@@ -1,6 +1,7 @@
 body {
     font-family: 'Poppins';
     font-style: normal;
+    background-color: #e2e2e2;
 }
 
 .sidebar {
@@ -100,12 +101,18 @@ body {
     background: url('/images/Calendar.svg') center no-repeat;
 }
 
+
 .topbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1;
     background-color: #fff;
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    border: 1px;
+    border: none;
     box-shadow: 0px 1px 0px #e2e8f0;
     height: 50px;
     margin-left: 220px;
@@ -113,7 +120,7 @@ body {
 }
 .topbar .GroupInTopbar input[type=text] {
     position: relative;
-    width: 800px;
+    width: 950px;
     float: left;
     padding: 6px;
     border: none;
@@ -127,7 +134,7 @@ body {
     margin-top: 13px;
     margin-left: 5;
 }
-.TopRight div{
+.TopRight {
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -166,4 +173,39 @@ body {
     width: 20px;
     height: 20px;
     background: url('/images/messages.svg') center no-repeat;
+}
+.TopRight div{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.TopRight div div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+.JohnWick {
+    color: #212b36;
+    text-align: right;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.hitman {
+    color: #212b36;
+    text-align: right;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+
+}
+.TopRight div div img {
+    padding-left: 10px;
 }
