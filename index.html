@@ -14,17 +14,17 @@
             <span>Hello! Log in with your email</span>
             <div class="input">
                 <span>Email</span>
-                    <input class="validator-error"  class="colortext" type="text" placeholder="Enter your email" name="email" />
+                    <input class="colortext" class="validator-error"  id="email"   type="text" placeholder="Enter your email" name="email" />
                     <img class="Vector"  src="images/Vector.svg"  />
                 
             </div>
             <div class="input">
                 <span>Password</span>
-                <input class="colortext" type="password" placeholder="Enter your password" name="password" />
+                <input class="colortext" id="password"  type="password" placeholder="Enter your password" name="password" />
                 <img src="images/Vector2.svg"  />
             </div>
             <div>
-                <button onclick="validate()"  type="submit">LOG IN</button>
+                <button onclick="isValid"  type="submit" id="submitButton">LOG IN</button>
             </div>
         </form>
         <script src="scripts/app.js"></script>

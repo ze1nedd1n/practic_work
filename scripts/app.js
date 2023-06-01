@@ -1,33 +1,31 @@
-const email = document.querySelector("input[name=email]");
-const password = document.querySelector("input[name=password]");
 
-const reigisteredUsers = [
-    ["admin", "1234qwer"],
-];
+const reigisteredUsers = {
+    email: "admin",
+    password: "1234qwer"
+
+};
+
+var email = document.getElementById("email");
+var password = document.getElementById("password");
+
+var bttn = document.getElementById("submitButton");
+
+var logUsers = {
+    email: email,
+    password: password
+
+};
 
 
-
-function validate(email, password){
-    const logUsers = [
-    [email, password],
-]
-    if (logUsers == reigisteredUsers){
-        return true;
+function isValid() {
+    
+    if(logUsers[email][password] == reigisteredUsers[email][password]){
+        console.log("yes");
     }
     else{
-        return false;
+        console.log("no");
     }
 }
 
-button.addEventListener("click", validate);  
 
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    var email = inputs["email"].value;
-    var password = inputs["password"].value;  
-      if (!validate(email, password)){        
-        alert('Неверный логин или пароль');
-      } else {      
-        alert('Верные данные');
-      }
-  });
+bttn.addEventListener("click", isValid);
