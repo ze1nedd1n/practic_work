@@ -7,19 +7,19 @@ const reigisteredUsers = {
 
 var email = document.getElementById("email");
 var password = document.getElementById("password");
-
+/*
 var bttn = document.getElementById("submitButton");
-
+*/
 var logUsers = {
-    email: email,
-    password: password
+    email: document.getElementById("email") ,
+    password: document.getElementById("password")
 
 };
 
 
 function isValid() {
     
-    if(logUsers[email][password] == reigisteredUsers[email][password]){
+    if(logUsers[email] == reigisteredUsers[email] && logUsers[password]==reigisteredUsers[password]){
         console.log("yes");
     }
     else{
@@ -27,5 +27,6 @@ function isValid() {
     }
 }
 
-
+/*
 bttn.addEventListener("click", isValid);
+*/
