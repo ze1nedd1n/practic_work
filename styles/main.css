@@ -2,6 +2,8 @@ body {
     font-family: 'Poppins';
     font-style: normal;
     background-color: #e2e2e2;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar {
@@ -208,4 +210,45 @@ body {
 }
 .TopRight div div img {
     padding-left: 10px;
+}
+.FirstGroup {
+    display: flex;
+    flex-direction: column;
+
+}
+.rectangle {
+    position: relative;
+    width: 1240px;
+    height: 397px;
+    background: #ffffff;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+.rectangle div h2 {
+    padding-left: 40px;
+    padding-top: 20px;
+    color: #212b36;
+    font-size: 22px;
+    line-height: 28px;
+}
+.analytics {
+    position: absolute;
+    margin-right: 46px;
+    margin-left: 92px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: ;
+    justify-content: space-around;
+    align-items: end;
+}
+.analytics div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.analytics div svg {
+    display: flex;
+    align-items: end;
+    vertical-align: bottom;
 }
