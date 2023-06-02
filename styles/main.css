@@ -241,13 +241,13 @@ body {
     justify-content: space-evenly;
     align-content: flex-end;
 }
-.analytics div{
+.analytics g{
     display: flex;
     flex-direction: column;
     gap: 3px;
 
 }
-.analytics div svg {
+.analytics g svg {
     display: flex;
     align-content: flex-end;
     vertical-align: bottom;
@@ -257,3 +257,25 @@ body {
 .analytics div h6 {
     color: #64748b;
 }
+.bar {
+    fill: #d81c3f;
+  }
+  
+  .bar:hover {
+    fill: darkgray;
+  }
+  
+  .axis {
+    font: 10px sans-serif;
+  }
+  
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+  
+  .x.axis path {
+    display: none;
+  }
