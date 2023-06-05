@@ -247,18 +247,11 @@ body {
     gap: 3px;
 
 }
-.analytics g svg {
-    display: flex;
-    align-content: flex-end;
-    vertical-align: bottom;
-    width: 36;
-    height: 250px;
-}
 .analytics div h6 {
     color: #64748b;
 }
 .bar {
-    fill: #d81c3f;
+    fill: #3c50e0;
   }
   
   .bar:hover {
@@ -266,7 +259,9 @@ body {
   }
   
   .axis {
-    font: 10px sans-serif;
+    font: 12px sans-serif;
+    stroke: #64748b;
+    stroke-width: 0.5;
   }
   
   .axis path,
@@ -278,4 +273,13 @@ body {
   
   .x.axis path {
     display: none;
+  }
+
+  .x-text {
+    font-size: 14px;
+    stroke: #64748b;
+    stroke-width: 0.5;
+    line-height: 22px;
+    text-align: center;
+    text-anchor: middle;
   }
