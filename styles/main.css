@@ -285,9 +285,64 @@ body {
     display: flex;
     flex-direction: row;
   }
+  .bounceRate .visitDuration,
+  .bounceRate .Rate,
+  .bounceRate .totalPageviews,
   .bounceRate .uniqueVisitors {
     width: 310px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
+  .bounceRate .visitDuration article,
+  .bounceRate .Rate article,
+  .bounceRate .totalPageviews article,
+  .bounceRate .uniqueVisitors article {
+    margin-left: 90px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 150px;
+  }
+  .bounceRate .visitDuration article h1,
+  .bounceRate .Rate article h1,
+  .bounceRate .totalPageviews article h1,
+  .bounceRate .uniqueVisitors article h1 {
+    margin-bottom: 0px;
+    font-size: 28px;
+    line-height: 34px;
+    color: #1c2434;
+  }
+  .bounceRate .visitDuration article p,
+  .bounceRate .Rate article p,
+  .bounceRate .totalPageviews article p,
+  .bounceRate .uniqueVisitors article p {
+    margin-top: 0px;
+    font-size: 14px;
+    color: #64748b;
+    line-height: 22px;
+  } 
+  .bounceRate .visitDuration figure,
+  .bounceRate .Rate figure,
+  .bounceRate .totalPageviews figure,
+  .bounceRate .uniqueVisitors figure  {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0px;
+    align-items: center
+  }
+  .bounceRate .visitDuration figure p,
+  .bounceRate .totalPageviews figure p,
+  .bounceRate .uniqueVisitors figure p {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #10b981;
+  }
+  .bounceRate .Rate figure p{
+    font-size: 14px;
+    margin-left: 5px;
+    color: #f0950c;
+  }
+
   .bounceRate .totalPageviews {
     width: 310px;
   }
