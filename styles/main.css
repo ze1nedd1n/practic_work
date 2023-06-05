@@ -352,7 +352,11 @@ body {
   .bounceRate .visitDuration {
     width: 310px;
   }
-
+  .bounceRate hr{
+    height: 80px;
+    margin-top: 1em;
+  }
+  
 
 
   
