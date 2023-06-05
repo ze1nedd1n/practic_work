@@ -224,7 +224,7 @@ body {
     background: #ffffff;
     margin-left: 15%;
     margin-top: 10%;
-    
+
 }
 .rectangle div h2 {
     padding-left: 40px;
@@ -235,17 +235,9 @@ body {
 }
 .analytics {
     margin-right: 46px;
-    margin-left: 80px;
+    margin-left: 40px;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-content: flex-end;
-}
-.analytics g{
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-
 }
 .analytics div h6 {
     color: #64748b;
@@ -282,4 +274,60 @@ body {
     line-height: 22px;
     text-align: center;
     text-anchor: middle;
+  }
+
+  .bounceRate {
+    width: 1240px;
+    height: 120px;
+    background: #ffffff;
+    margin-left: 15%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  .bounceRate .uniqueVisitors {
+    width: 310px;
+  }
+  .bounceRate .totalPageviews {
+    width: 310px;
+  }
+  .bounceRate .Rate {
+    width: 310px;
+  }
+  .bounceRate .visitDuration {
+    width: 310px;
+  }
+
+
+
+  
+  .SecondGroup {
+    display: flex;
+    flex-direction: row;
+
+  }
+  
+  .SecondGroup .topCities {
+    width: 678px;
+    height: 774px;
+    background: #ffffff;
+    margin-left: 15%;
+    margin-top: 31px;
+  }
+  .SecondGroup .ThirdGroup {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+  .SecondGroup .ThirdGroup .TopContent {
+    width: 530px;
+    height: 372px;
+    background: #ffffff;
+    margin-top: 31px;
+  }
+  .SecondGroup .ThirdGroup .TopChanel {
+    width: 530px;
+    height: 372px;
+    background: #ffffff;
+    margin-top: 30px;
   }
