@@ -435,12 +435,53 @@ body {
     display: flex;
     flex-direction: column;
     margin-left: 30px;
-  }
+  }  
   .SecondGroup .ThirdGroup .TopContent {
     width: 530px;
     height: 372px;
     background: #ffffff;
     margin-top: 31px;
+    display: flex;
+    flex-direction: column;
+  }
+  .SecondGroup .ThirdGroup .TopChanel div,
+  .SecondGroup .ThirdGroup .TopContent div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .SecondGroup .ThirdGroup .TopChanel div arcticle,
+  .SecondGroup .ThirdGroup .TopContent div arcticle {
+    display: flex;
+    flex-direction: row;
+  }  
+  .SecondGroup .ThirdGroup .TopChanel div arcticle h5,
+  .SecondGroup .ThirdGroup .TopContent div arcticle h5 {
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  .contentRect {
+    fill: #eff4fb;
+  }
+  .SecondGroup .ThirdGroup .TopChanel div svg,
+  .SecondGroup .ThirdGroup .TopContent div svg {
+    height: 46px;
+  }
+  .SecondGroup .ThirdGroup .TopChanel div svg text,
+  .SecondGroup .ThirdGroup .TopContent div svg text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  .SecondGroup .ThirdGroup .TopChanel div header,
+  .SecondGroup .ThirdGroup .TopContent div header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
   .SecondGroup .ThirdGroup .TopChanel {
     width: 530px;
