@@ -355,11 +355,10 @@ body {
   .bounceRate hr{
     height: 80px;
     margin-top: 1em;
+    border-color: #e2e8f0;
   }
   
 
-
-  
   .SecondGroup {
     display: flex;
     flex-direction: row;
@@ -373,6 +372,62 @@ body {
     margin-left: 15%;
     margin-top: 31px;
   }
+.topCities figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.topCities figure nav {
+    margin-top: 32px;
+    margin-right: 19px;
+}
+.topCities  svg {
+    margin-top: 75px;
+    margin-left: none;
+}
+
+.topCities figure header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.topCities figure header h3 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+}
+.select {
+    background: #f4f7ff;
+    border-radius: 4px;
+    height: 32px;
+    width: 123px;
+    padding: 5px 13px;
+    font-size: 14px;
+    color: #64748b;
+}
+.topCities main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.topCities main .chart {
+    margin-top: 20px;
+}
+.topCities main .chart rect {
+    fill: #3056d3;
+    background: #e5e7eb;
+    border: 1px solid;
+    border-radius: 4px;
+  }
+.topCities main .chart text {
+    font: 12px;
+    fill: white;
+    text-anchor: center;
+  }
+  
+
+
   .SecondGroup .ThirdGroup {
     display: flex;
     flex-direction: column;
