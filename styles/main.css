@@ -405,21 +405,24 @@ body {
     padding: 5px 13px;
     font-size: 14px;
     color: #64748b;
+    border-color: #e5e7eb;
 }
 .topCities main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 10px;
 }
 .topCities main .chart {
     margin-top: 20px;
 }
-.topCities main .chart rect {
+.topCities main .chart .blueRect {
     fill: #3056d3;
     background: #e5e7eb;
-    border: 1px solid;
-    border-radius: 4px;
   }
+.greyRect {
+    fill: #e5e7eb;
+}
 .topCities main .chart text {
     font: 12px;
     fill: white;
