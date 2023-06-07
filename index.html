@@ -8,13 +8,14 @@
         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
     </head>
-    <body>
-        <form class="login">
+    <body id="content">
+        
+        <form class="login" >
             <h1>Login</h1>
             <span>Hello! Log in with your email</span>
             <div class="input">
                 <span>Email</span>
-                    <input class="colortext" class="validator-error"  id="email"   type="text" placeholder="Enter your email" name="email" />
+                    <input class="colortext"   id="email"   type="text" placeholder="Enter your email" name="email" />
                     <img class="Vector"  src="images/Vector.svg"  />
                 
             </div>
@@ -24,10 +25,9 @@
                 <img src="images/Vector2.svg"  />
             </div>
             <div>
-                <button onclick="isValid"  type="submit" id="submitButton">LOG IN</button>
+                <button   type="submit" id="submitButton">LOG IN</button>
             </div>
         </form>
         <script src="scripts/app.js"></script>
-
     </body>
 </html>

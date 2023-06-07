@@ -81,6 +81,18 @@ button {
     color: darkgrey;
     padding-left: 5%;
 }
+
+#content form div input[type="text"]:focus,
+#content form div input[type="password"]:focus {
+	-webkit-box-shadow: 0 0 2px #fb5454 inset;
+	-moz-box-shadow: 0 0 2px #fb5454 inset;
+	-ms-box-shadow: 0 0 2px #fb5454 inset;
+	-o-box-shadow: 0 0 2px #fb5454 inset;
+	box-shadow: 0 0 2px #fb5454 inset;
+	background-color: #fff;
+	border: 1px solid #fb5454;
+	outline: none;
+}
 /*
 .validator-error {
     border-color: red! important;

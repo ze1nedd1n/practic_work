@@ -1,32 +1,13 @@
 
-const reigisteredUsers = {
-    email: "admin",
-    password: "1234qwer"
 
-};
+  document.getElementById('submitButton').onclick = function(){
+    let login = document.getElementById('email').value;
+    let password = document.getElementById('password').value;
 
-var email = document.getElementById("email");
-var password = document.getElementById("password");
-/*
-var bttn = document.getElementById("submitButton");
-*/
-var logUsers = {
-    email: document.getElementById("email") ,
-    password: document.getElementById("password")
-
-};
-
-
-function isValid() {
-    
-    if(logUsers[email] == reigisteredUsers[email] && logUsers[password]==reigisteredUsers[password]){
-        console.log("yes");
+    if(login == 'admin' && password == '1234'){
+        window.location.href = '/pages/main.html';
     }
-    else{
-        console.log("no");
+    else {
+        alert('Incorrect password or login');
     }
-}
-
-/*
-bttn.addEventListener("click", isValid);
-*/
+  }
