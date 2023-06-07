@@ -32,7 +32,7 @@ body {
     vertical-align: middle;
     width: 30px;
     height: 30px;
-    background: url('/images/logo.svg') center no-repeat;
+    background: url('../images/logo.svg') center no-repeat;
 }
 .menu{
     color: #8a99af;
@@ -74,7 +74,7 @@ body {
     vertical-align: middle;
     width: 30px;
     height: 30px;
-    background: url('/images/Main.svg') center no-repeat;
+    background: url('../images/Main.svg') center no-repeat;
 }
 .singleMenu a.parsing::before {
     content: '';
@@ -83,7 +83,7 @@ body {
     vertical-align: middle;
     width: 30px;
     height: 30px;
-    background: url('/images/Parsing.svg') center no-repeat;
+    background: url('../images/Parsing.svg') center no-repeat;
 }
 .singleMenu a.profile::before {
     content: '';
@@ -92,7 +92,7 @@ body {
     vertical-align: middle;
     width: 30px;
     height: 30px;
-    background: url('/images/Profile.svg') center no-repeat;
+    background: url('../images/Profile.svg') center no-repeat;
 }
 .singleMenu a.calendar::before {
     content: '';
@@ -101,7 +101,7 @@ body {
     vertical-align: middle;
     width: 30px;
     height: 30px;
-    background: url('/images/Calendar.svg') center no-repeat;
+    background: url('../images/Calendar.svg') center no-repeat;
 }
 
 
@@ -157,7 +157,7 @@ body {
     vertical-align: middle;
     width: 20px;
     height: 20px;
-    background: url('/images/notif.svg') center no-repeat;
+    background: url('../images/notif.svg') center no-repeat;
 }
 .TopRight .btn2 {
     margin-right: 20px;
@@ -175,7 +175,7 @@ body {
     vertical-align: middle;
     width: 20px;
     height: 20px;
-    background: url('/images/messages.svg') center no-repeat;
+    background: url('../images/messages.svg') center no-repeat;
 }
 .TopRight div{
     display: flex;
