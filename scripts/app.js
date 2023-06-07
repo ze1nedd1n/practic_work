@@ -5,7 +5,7 @@
     let password = document.getElementById('password').value;
 
     if(login == 'admin' && password == '1234'){
-        window.location.href = '/pages/main.html';
+        location.href = '/pages/main.html';
     }
     else {
         alert('Incorrect password or login');
