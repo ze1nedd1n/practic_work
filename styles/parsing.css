@@ -1,0 +1,215 @@
+body {
+    font-family: 'Poppins';
+    font-style: normal;
+    background-color: #e2e2e2;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #1c2434;
+    border: 1px;
+    width: 220px;
+    height: 100%;
+    padding-top: 20px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+.sidebar h1 {
+    padding-left: 16px;
+    color: white;
+    font-size: 26px;
+}
+.sidebar h1.logo::before {
+    content: '';
+    margin-bottom: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    background: url('/images/logo.svg') center no-repeat;
+}
+.menu{
+    color: #8a99af;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    display: flex;
+    padding-left: 16px;
+}
+.singleMenu {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    color: #8a99af;
+}
+.singleMenu a {
+    margin-top: 4px;
+    padding: 6px 8px 6px  ;
+    display: block;
+    background-color: none;
+    color: #8a99af;
+    text-decoration: none;
+    margin-right: 16px;
+    font-size: 16px;
+}
+.singleMenu a:hover {
+    background-color: #333a48;
+
+}
+.singleMenu a.parsing,
+.singleMenu a.active {
+    background-color: #333a48;
+    margin-right: 16px;
+}
+.singleMenu a.active::before {
+    content: '';
+    margin-bottom: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    background: url('/images/Main.svg') center no-repeat;
+}
+.singleMenu a.parsing::before {
+    content: '';
+    margin-bottom: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    background: url('/images/Parsing.svg') center no-repeat;
+}
+.singleMenu a.profile::before {
+    content: '';
+    margin-bottom: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    background: url('/images/Profile.svg') center no-repeat;
+}
+.singleMenu a.calendar::before {
+    content: '';
+    margin-bottom: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    background: url('/images/Calendar.svg') center no-repeat;
+}
+
+
+.topbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    box-shadow: 0px 1px 0px #e2e8f0;
+    height: 50px;
+    margin-left: 220px;
+
+}
+.topbar .GroupInTopbar input[type=text] {
+    position: relative;
+    width: 950px;
+    float: left;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-left: 25px;
+    font-size: 16px;
+}
+.search {
+    position: absolute;
+    vertical-align: middle;
+    margin-top: 13px;
+    margin-left: 5;
+}
+.TopRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.TopRight .btn {
+    margin-top: 3px;
+    border: none;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+.TopRight .btn .notifications {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url('/images/notif.svg') center no-repeat;
+}
+.TopRight .btn2 {
+    margin-right: 20px;
+    margin-top: 3px;
+    margin-left: 10px;
+    border: none;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+.TopRight .btn2 .messages {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url('/images/messages.svg') center no-repeat;
+}
+.TopRight div{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.TopRight div div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+.JohnWick {
+    color: #212b36;
+    text-align: right;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.hitman {
+    color: #212b36;
+    text-align: right;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+
+}
+.TopRight div div img {
+    padding-left: 10px;
+}
