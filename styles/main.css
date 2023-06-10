@@ -2,30 +2,46 @@ body {
     font-family: 'Poppins';
     font-style: normal;
     background-color: #e2e2e2;
-    display: flex;
-    flex-direction: column;
 }
-
-.sidebar {
+.main {
     display: flex;
-    flex-direction: column;
-    position: fixed;
-    background-color: #1c2434;
-    border: 1px;
-    width: 220px;
-    height: 100%;
-    padding-top: 20px;
-    z-index: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: absolute;
     top: 0;
     left: 0;
+    height: 100%;
+    width: 100%;
+
+}
+.right-bar {
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    position: relative;
+    left: 250;
+    top: 50;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    background-color: #1c2434;
+    position: fixed;
+    top: 0;
+    border: 1px;
+    width: 220px;
+    height: 100vh;
+    padding-top: 20px;
+    z-index: 1;
     overflow-x: hidden;
 }
-.sidebar h1 {
+.side-bar h1 {
     padding-left: 16px;
     color: white;
     font-size: 26px;
 }
-.sidebar h1.logo::before {
+.side-bar h1.logo::before {
     content: '';
     margin-bottom: 3px;
     display: inline-block;
@@ -43,13 +59,13 @@ body {
     display: flex;
     padding-left: 16px;
 }
-.singleMenu {
+.single-menu {
     display: flex;
     flex-direction: column;
     padding-left: 16px;
     color: #8a99af;
 }
-.singleMenu a {
+.single-menu a {
     margin-top: 4px;
     padding: 6px 8px 6px  ;
     display: block;
@@ -59,15 +75,15 @@ body {
     margin-right: 16px;
     font-size: 16px;
 }
-.singleMenu a:hover {
+.single-menu a:hover {
     background-color: #333a48;
 
 }
-.singleMenu a.active {
+.single-menu a.active {
     background-color: #333a48;
     margin-right: 16px;
 }
-.singleMenu a.active::before {
+.single-menu a.active::before {
     content: '';
     margin-bottom: 3px;
     display: inline-block;
@@ -76,7 +92,7 @@ body {
     height: 30px;
     background: url('../images/Main.svg') center no-repeat;
 }
-.singleMenu a.parsing::before {
+.single-menu a.parsing::before {
     content: '';
     margin-bottom: 3px;
     display: inline-block;
@@ -85,7 +101,7 @@ body {
     height: 30px;
     background: url('../images/Parsing.svg') center no-repeat;
 }
-.singleMenu a.profile::before {
+.single-menu a.profile::before {
     content: '';
     margin-bottom: 3px;
     display: inline-block;
@@ -94,7 +110,7 @@ body {
     height: 30px;
     background: url('../images/Profile.svg') center no-repeat;
 }
-.singleMenu a.calendar::before {
+.single-menu a.calendar::before {
     content: '';
     margin-bottom: 3px;
     display: inline-block;
@@ -105,7 +121,7 @@ body {
 }
 
 
-.topbar {
+.top-bar {
     top: 0;
     left: 0;
     right: 0;
@@ -121,7 +137,7 @@ body {
     margin-left: 220px;
 
 }
-.topbar .GroupInTopbar input[type=text] {
+.top-bar .group-in-top-bar input[type=text] {
     position: relative;
     width: 950px;
     float: left;
@@ -137,13 +153,13 @@ body {
     margin-top: 13px;
     margin-left: 5;
 }
-.TopRight {
+.top-right {
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
 }
-.TopRight .btn {
+.top-right .btn {
     margin-top: 3px;
     border: none;
     display: inline-block;
@@ -151,7 +167,7 @@ body {
     padding: 10px 12px;
     cursor: pointer;
 }
-.TopRight .btn .notifications {
+.top-right .btn .notifications {
     content: '';
     display: inline-block;
     vertical-align: middle;
@@ -159,7 +175,7 @@ body {
     height: 20px;
     background: url('../images/notif.svg') center no-repeat;
 }
-.TopRight .btn2 {
+.top-right .btn2 {
     margin-right: 20px;
     margin-top: 3px;
     margin-left: 10px;
@@ -169,7 +185,7 @@ body {
     padding: 10px 12px;
     cursor: pointer;
 }
-.TopRight .btn2 .messages {
+.top-right .btn2 .messages {
     content: '';
     display: inline-block;
     vertical-align: middle;
@@ -177,19 +193,19 @@ body {
     height: 20px;
     background: url('../images/messages.svg') center no-repeat;
 }
-.TopRight div{
+.top-right div{
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
 }
-.TopRight div div{
+.top-right div div{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 0px;
 }
-.JohnWick {
+.john-wick {
     color: #212b36;
     text-align: right;
     font-weight: 500;
@@ -209,13 +225,12 @@ body {
     margin-top: 0px;
 
 }
-.TopRight div div img {
+.top-right div div img {
     padding-left: 10px;
 }
-.FirstGroup {
+.first-group {
     display: flex;
     flex-direction: column;
-    display: flex;
     flex-wrap: nowrap;
 
 }
@@ -223,8 +238,6 @@ body {
     width: 1240px;
     height: 397px;
     background: #ffffff;
-    margin-left: 15%;
-    margin-top: 10%;
 
 }
 .rectangle div h2 {
@@ -235,8 +248,6 @@ body {
     line-height: 28px;
 }
 .analytics {
-    margin-right: 46px;
-    margin-left: 40px;
     display: flex;
     flex-wrap: nowrap;
 }
@@ -277,123 +288,121 @@ body {
     text-anchor: middle;
   }
 
-  .bounceRate {
+  .bounce-rate {
     width: 1240px;
     height: 120px;
     background: #ffffff;
-    margin-left: 15%;
     margin-top: 30px;
     display: flex;
     flex-direction: row;
   }
-  .bounceRate .visitDuration,
-  .bounceRate .Rate,
-  .bounceRate .totalPageviews,
-  .bounceRate .uniqueVisitors {
+  .bounce-rate .visit-duration,
+  .bounce-rate .Rate,
+  .bounce-rate .total-page-views,
+  .bounce-rate .unique-visitors {
     width: 310px;
     display: flex;
     flex-direction: row;
     align-items: center;
   }
-  .bounceRate .visitDuration article,
-  .bounceRate .Rate article,
-  .bounceRate .totalPageviews article,
-  .bounceRate .uniqueVisitors article {
+  .bounce-rate .visit-duration article,
+  .bounce-rate .Rate article,
+  .bounce-rate .total-page-views article,
+  .bounce-rate .unique-visitors article {
     margin-left: 90px;
     margin-top: 30px;
     margin-bottom: 30px;
     width: 150px;
   }
-  .bounceRate .visitDuration article h1,
-  .bounceRate .Rate article h1,
-  .bounceRate .totalPageviews article h1,
-  .bounceRate .uniqueVisitors article h1 {
+  .bounce-rate .visit-duration article h1,
+  .bounce-rate .Rate article h1,
+  .bounce-rate .total-page-views article h1,
+  .bounce-rate .unique-visitors article h1 {
     margin-bottom: 0px;
     font-size: 28px;
     line-height: 34px;
     color: #1c2434;
   }
-  .bounceRate .visitDuration article p,
-  .bounceRate .Rate article p,
-  .bounceRate .totalPageviews article p,
-  .bounceRate .uniqueVisitors article p {
+  .bounce-rate .visit-duration article p,
+  .bounce-rate .Rate article p,
+  .bounce-rate .total-page-views article p,
+  .bounce-rate .unique-visitors article p {
     margin-top: 0px;
     font-size: 14px;
     color: #64748b;
     line-height: 22px;
   } 
-  .bounceRate .visitDuration figure,
-  .bounceRate .Rate figure,
-  .bounceRate .totalPageviews figure,
-  .bounceRate .uniqueVisitors figure  {
+  .bounce-rate .visit-duration figure,
+  .bounce-rate .Rate figure,
+  .bounce-rate .total-page-views figure,
+  .bounce-rate .unique-visitors figure  {
     display: flex;
     flex-direction: row;
     margin-left: 0px;
     align-items: center
   }
-  .bounceRate .visitDuration figure p,
-  .bounceRate .totalPageviews figure p,
-  .bounceRate .uniqueVisitors figure p {
+  .bounce-rate .visit-duration figure p,
+  .bounce-rate .total-page-views figure p,
+  .bounce-rate .unique-visitors figure p {
     font-size: 14px;
     margin-left: 5px;
     color: #10b981;
   }
-  .bounceRate .Rate figure p{
+  .bounce-rate .Rate figure p{
     font-size: 14px;
     margin-left: 5px;
     color: #f0950c;
   }
 
-  .bounceRate .totalPageviews {
+  .bounce-rate .total-page-views {
     width: 310px;
   }
-  .bounceRate .Rate {
+  .bounce-rate .Rate {
     width: 310px;
   }
-  .bounceRate .visitDuration {
+  .bounce-rate .visit-duration {
     width: 310px;
   }
-  .bounceRate hr{
+  .bounce-rate hr{
     height: 80px;
     margin-top: 1em;
     border-color: #e2e8f0;
   }
   
 
-  .SecondGroup {
+  .second-group {
     display: flex;
     flex-direction: row;
 
   }
   
-  .SecondGroup .topCities {
+  .second-group .top-cities {
     width: 678px;
     height: 774px;
     background: #ffffff;
-    margin-left: 15%;
     margin-top: 31px;
   }
-.topCities figure {
+.top-cities figure {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.topCities figure nav {
+.top-cities figure nav {
     margin-top: 32px;
     margin-right: 19px;
 }
-.topCities  svg {
+.top-cities  svg {
     margin-top: 75px;
     margin-left: none;
 }
 
-.topCities figure header {
+.top-cities figure header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.topCities figure header h3 {
+.top-cities figure header h3 {
     font-size: 22px;
     font-weight: 700;
     line-height: 28px;
@@ -408,23 +417,23 @@ body {
     color: #64748b;
     border-color: #e5e7eb;
 }
-.topCities main {
+.top-cities main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 10px;
 }
-.topCities main .chart {
+.top-cities main .chart {
     margin-top: 20px;
 }
-.topCities main .chart .blueRect {
+.top-cities main .chart .blue-rect {
     fill: #3056d3;
     background: #e5e7eb;
   }
-.greyRect {
+.grey-rect {
     fill: #e5e7eb;
 }
-.topCities main .chart text {
+.top-cities main .chart text {
     font: 12px;
     fill: white;
     text-anchor: center;
@@ -432,12 +441,12 @@ body {
   
 
 
-  .SecondGroup .ThirdGroup {
+  .second-group .third-group {
     display: flex;
     flex-direction: column;
     margin-left: 30px;
   }  
-  .SecondGroup .ThirdGroup .TopContent {
+  .second-group .third-group .top-content {
     width: 530px;
     height: 372px;
     background: #ffffff;
@@ -445,46 +454,46 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .SecondGroup .ThirdGroup .TopChanel div,
-  .SecondGroup .ThirdGroup .TopContent div {
+  .second-group .third-group .top-chanel div,
+  .second-group .third-group .top-content div {
     display: flex;
     flex-direction: column;
     margin-left: 30px;
     margin-right: 30px;
   }
-  .SecondGroup .ThirdGroup .TopChanel div arcticle,
-  .SecondGroup .ThirdGroup .TopContent div arcticle {
+  .second-group .third-group .top-chanel div arcticle,
+  .second-group .third-group .top-content div arcticle {
     display: flex;
     flex-direction: row;
   }  
-  .SecondGroup .ThirdGroup .TopChanel div arcticle h5,
-  .SecondGroup .ThirdGroup .TopContent div arcticle h5 {
+  .second-group .third-group .top-chanel div arcticle h5,
+  .second-group .third-group .top-content div arcticle h5 {
     color: #64748b;
     font-size: 14px;
     font-weight: 500;
     line-height: 22px;
   }
-  .contentRect {
+  .content-rect {
     fill: #eff4fb;
   }
-  .SecondGroup .ThirdGroup .TopChanel div svg,
-  .SecondGroup .ThirdGroup .TopContent div svg {
+  .second-group .third-group .top-chanel div svg,
+  .second-group .third-group .top-content div svg {
     height: 46px;
   }
-  .SecondGroup .ThirdGroup .TopChanel div svg text,
-  .SecondGroup .ThirdGroup .TopContent div svg text {
+  .second-group .third-group .top-chanel div svg text,
+  .second-group .third-group .top-content div svg text {
     font-size: 14px;
     font-weight: 500;
     line-height: 22px;
   }
-  .SecondGroup .ThirdGroup .TopChanel div header,
-  .SecondGroup .ThirdGroup .TopContent div header {
+  .second-group .third-group .top-chanel div header,
+  .second-group .third-group .top-content div header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
-  .SecondGroup .ThirdGroup .TopChanel {
+  .second-group .third-group .top-chanel {
     width: 530px;
     height: 372px;
     background: #ffffff;
