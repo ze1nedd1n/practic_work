@@ -29,9 +29,9 @@ body {
     background-color: #1c2434;
     position: fixed;
     top: 0;
+    bottom: 0;
     border: 1px;
     width: 220px;
-    height: 100vh;
     padding-top: 20px;
     z-index: 1;
     overflow-x: hidden;
@@ -235,7 +235,7 @@ body {
 
 }
 .rectangle {
-    width: 1240px;
+    width: 1180px;
     height: 397px;
     background: #ffffff;
     padding-left: 60px;
@@ -250,6 +250,7 @@ body {
 .analytics {
     display: flex;
     flex-wrap: nowrap;
+    margin-right: 0px;
 }
 .analytics div h6 {
     color: #64748b;
