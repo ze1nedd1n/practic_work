@@ -1,0 +1,30 @@
+[
+  {
+    "city": "Astana",
+    "value": 35
+  },
+  {
+    "city": "Almaty",
+    "value": 26
+  },
+  {
+    "city": "Shymkent",
+    "value": 18
+  },
+  {
+    "city": "Atyrau",
+    "value": 14
+  },
+  {
+    "city": "Oskemen",
+    "value": 10
+  },
+  {
+    "city": "Kyzylorda",
+    "value": 7
+  },
+  {
+    "city": "Semei",
+    "value": 50
+  }
+]
