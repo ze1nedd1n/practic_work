@@ -25,6 +25,14 @@
   },
   {
     "city": "Semei",
-    "value": 50
+    "value": 14
+  },
+  {
+    "city": "Kostanai",
+    "value": 10
+  },
+  {
+    "city": "Zaysan",
+    "value": 100
   }
 ]

@@ -15,6 +15,10 @@ body {
 .right-bar {
     display: flex;
     flex-direction: column;
+    padding: 0px 0px 0px 20px;
+    overflow-y: scroll;
+    overflow-x: hidden
+    
 }
 
 .side-bar {
@@ -22,8 +26,10 @@ body {
     flex-direction: column;
     background-color: #1c2434;
     border: 1px;
-    width: 220px;
+    min-width: 220px;
     padding-top: 20px;
+    overflow: visible;
+    
 }
 .side-bar h1 {
     padding-left: 16px;
@@ -111,11 +117,6 @@ body {
 
 
 .top-bar {
-    top: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-    z-index: 1;
     background-color: #fff;
     overflow: hidden;
     display: flex;
@@ -123,8 +124,14 @@ body {
     border: none;
     box-shadow: 0px 1px 0px #e2e8f0;
     height: 50px;
-    margin-left: 220px;
+    overflow: hidden;
 
+}
+.top-bar .group-in-top-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 5px
 }
 .top-bar .group-in-top-bar input[type=text] {
     position: relative;
@@ -137,10 +144,7 @@ body {
     font-size: 16px;
 }
 .search {
-    position: absolute;
     vertical-align: middle;
-    margin-top: 13px;
-    margin-left: 5;
 }
 .top-right {
     display: flex;
@@ -377,13 +381,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
-.top-cities figure nav {
-    margin-top: 32px;
-    margin-right: 19px;
-}
-.top-cities  svg {
-    margin-top: 75px;
-    margin-left: none;
+.top-cities .line {
+    border-top: 1px solid #e7e7e7;
 }
 
 .top-cities figure header {
