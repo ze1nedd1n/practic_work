@@ -36,7 +36,7 @@ fetch('../cities.json').then(res => res.json()).then(res => {
     }
 });
 
-
+fetch('../content.json').then(top-content => )
 /* 
 <div class="row">
                             <div class="title">Astana</div>
@@ -45,4 +45,33 @@ fetch('../cities.json').then(res => res.json()).then(res => {
                                 <div class="value">35%</div>
                                 </div>
                             </div>
-                        </div>*/
+                        </div>
+                        
+                        <rect class="content-rect" x="0" y="0" rx="5" ry="5" width="349px" height="38px"></rect>
+                                    <text x="15" y="25">/</text>
+                                    <text x="360" y="25">2.5K</text>
+                                    <text x="440" y="25">2.1K</text>
+                                
+                                    <rect class="content-rect" x="0" y="40" rx="5" ry="5" width="230px" height="38px"></rect>
+                                    <text x="15" y="65">/blog/</text>
+                                    <text x="360" y="65">376</text>
+                                    <text x="440" y="65">139</text>
+                                
+                            
+                            
+                                <rect class="content-rect" x="0" y="80" rx="5" ry="5" width="308px" height="38px"></rect>
+                                <text x="15" y="105">/reserve/success</text>
+                                <text x="360" y="105">468</text>
+                                <text x="440" y="105">290</text>
+                            
+                                <rect class="content-rect" x="0" y="120" rx="5" ry="5" width="128px" height="38px"></rect>
+                                <text x="15" y="145">/product/product-details</text>
+                                <text x="360" y="145">298</text>
+                                <text x="440" y="145">176</text>
+                            
+                                <rect class="content-rect" x="0" y="160" rx="5" ry="5" width="197px" height="38px"></rect>
+                                <text x="15" y="185">/bog/digital-marketting</text>
+                                <text x="360" y="185">179</text>
+                                <text x="440" y="185">57</text>
+                                
+                                */
