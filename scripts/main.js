@@ -35,8 +35,8 @@ fetch('../cities.json').then(res => res.json()).then(res => {
         resId.append(row)
     }
 });
-
-fetch('../content.json').then(top-content => )
+/*
+fetch('../content.json').then(top-content => )*/
 /* 
 <div class="row">
                             <div class="title">Astana</div>
